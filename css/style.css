@@ -81,6 +81,7 @@ overflow: hidden;
 
 .nav-items{
 	list-style: none;
+	position: relative;
 }
 
 .nav-link{
@@ -90,6 +91,103 @@ color: #fff;
 letter-spacing: 0.1rem;
 text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);	
 }
+
+/*Dropdown 1*/
+
+.dropdown-1{
+	position: absolute;
+	top: 4.9rem;
+	left: -24rem;
+	background-color: #fff;
+	width: 96rem;
+	height: 60rem;
+	display: flex;
+	border-radius: 1rem;
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+	padding: 2rem;
+}
+
+.dropdown-1-left{
+	width: 30%;
+	padding-right: 4rem;
+}
+
+.dropdown-1-right{
+	width: 70%;
+	padding-right: 2rem;
+}
+
+.dropdown-1-left h3,
+.dropdown-1-right h3{
+	font-family: "Mooli",cursive;	
+	font-size: 1.8rem;
+	color: #8698a7;
+	padding-bottom: 1rem;
+	margin-bottom: 3rem;
+	border-bottom: .2rem solid rgba(134, 152, 167, 0.5);
+}
+
+.features-list-item{
+	margin: 1.5rem 0;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.features-list-item i{
+	font-size: 2rem;	
+	width: 4rem;
+	color: #8698a7;
+}
+
+.features-list-item span{
+	font-size: 1.8rem;	
+	color: #8698a7;
+}
+
+.features-list-item:hover i,
+.features-list-item:hover span{
+	color: #222;
+}
+
+.dropdown-services{
+	height: 45rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap ;
+}
+
+.dropdown-service{
+	display: flex;
+	margin-bottom: 3.5rem;
+	cursor: pointer;
+}
+
+.dropdown-service i{
+	width: 5.5rem;
+	height: 5.5rem;
+	background: linear-gradient(to right,#b150f1,#7e23da);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	margin-right:2rem;
+	align-items: center;
+	font-size: 2.5rem;
+	color: #fff;
+	box-shadow: 0 .5rem 2rem rgba(126, 35, 218, 0.3);
+	transition: transform 0.3s;
+}
+
+.dropdown-service:hover i{
+	transform: scale(1.1);
+}
+
+.dropdown-service-item{
+	display: flex;
+	flex-direction: column;
+}
+
+/*End of Dropdown 1*/
 
 .nav-btn{
 	width: 13rem;
@@ -133,19 +231,21 @@ header{
 	z-index: 4;
 }
 .banner h1{
-	font-family: "Arial",cursive;
+	font-family: "Mooli",cursive;
 	font-size: 13rem;
 	text-transform: uppercase;
-	color: white;
-	text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-	margin: 0 0 3rem 1rem;
+	color: #fff;
+	text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+	
 }
 
 .banner h3{
 	font-size: 3rem;
 	font-weight: 300;
-	color: white;
-	text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+	margin: 0 0 3rem 1rem;
 }
 
 .banner button{
@@ -154,7 +254,7 @@ header{
 	background: linear-gradient(to right, #aa3fec,#8430ea);
 	border: none;
 	border-radius: 3rem;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1rem;
